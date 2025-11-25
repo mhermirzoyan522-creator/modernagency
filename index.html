@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>NovaWeb — современная разработка сайтов</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">NovaWeb</div>
+
+      <nav class="nav" id="nav">
+        <a href="#hero" class="nav__link">Главная</a>
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#portfolio" class="nav__link">Работы</a>
+        <a href="#process" class="nav__link">Процесс</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#contact" class="nav__link">Контакты</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Frontend-разработка</p>
+        <h1 class="hero__title">Современные сайты, которые приносят клиентов</h1>
+        <p class="hero__subtitle">
+          Разработка лендингов и промо-сайтов на HTML, CSS и JavaScript. Адаптивный дизайн,
+          быстрая загрузка и понятная структура.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Обсудить проект</a>
+          <a href="#portfolio" class="btn btn--ghost">Смотреть работы</a>
+        </div>
+        <p class="hero__note">Срок разработки лендинга — от 3 дней.</p>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__number">3+</span>
+          <span class="stat__label">лет изучения<br>веб-разработки</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">10+</span>
+          <span class="stat__label">проектов<br>в портфолио</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">24/7</span>
+          <span class="stat__label">на связи<br>в мессенджерах</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section__title">Чем я могу помочь</h2>
+      <p class="section__subtitle">
+        Сделаю сайт под вашу задачу — от простого лендинга до небольшого многостраничного сайта.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3 class="card__title">Лендинг под ключ</h3>
+          <p class="card__text">
+            Одностраничный сайт с понятной структурой и призывом к действию. Подходит для услуг, мероприятий и запусков.
+          </p>
+          <ul class="card__list">
+            <li>до 6 блоков;</li>
+            <li>адаптив под телефон и ПК;</li>
+            <li>форма заявки или обратного звонка.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Вёрстка по макету</h3>
+          <p class="card__text">
+            Аккуратная пиксель-перфект вёрстка по вашему дизайну в Figma или PSD, с анимациями и эффектами.
+          </p>
+          <ul class="card__list">
+            <li>кроссбраузерность;</li>
+            <li>чистый и структурированный код;</li>
+            <li>готовность к интеграции с любым backend.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Доработка сайта</h3>
+          <p class="card__text">
+            Исправление ошибок, правки вёрстки, добавление новых блоков и форм. Помогу оживить существующий сайт.
+          </p>
+          <ul class="card__list">
+            <li>добавление анимаций;</li>
+            <li>улучшение адаптива;</li>
+            <li>оптимизация структуры.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Портфолио -->
+  <section class="section section--dark" id="portfolio">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title section__title--light">Примеры работ</h2>
+        <div class="filter" id="portfolio-filter">
+          <button class="filter__btn filter__btn--active" data-filter="all">Все</button>
+          <button class="filter__btn" data-filter="landing">Лендинги</button>
+          <button class="filter__btn" data-filter="business">Бизнес</button>
+          <button class="filter__btn" data-filter="demo">Демо-проекты</button>
+        </div>
+      </div>
+
+      <div class="portfolio-grid" id="portfolio-grid">
+        <article class="project" data-type="landing demo">
+          <div class="project__badge">Демо</div>
+          <h3 class="project__title">Лендинг кофейни CoffeeTime</h3>
+          <p class="project__text">
+            Одностраничный сайт с меню, отзывами и формой заявки. Адаптивная вёрстка и модальное окно заказа.
+          </p>
+          <span class="project__tag">HTML / CSS / JS</span>
+        </article>
+
+        <article class="project" data-type="business">
+          <h3 class="project__title">Сайт строительной компании</h3>
+          <p class="project__text">
+            Структурированный лендинг с блоком проектов, сроками работ и формой расчёта стоимости.
+          </p>
+          <span class="project__tag">Лендинг для бизнеса</span>
+        </article>
+
+        <article class="project" data-type="landing demo">
+          <div class="project__badge">Демо</div>
+          <h3 class="project__title">Лендинг онлайн-курса по программированию</h3>
+          <p class="project__text">
+            Программа обучения, блок с тарифами, FAQ-аккордеон и форма записи.
+          </p>
+          <span class="project__tag">HTML / CSS / JS</span>
+        </article>
+
+        <article class="project" data-type="business">
+          <h3 class="project__title">Сайт службы доставки</h3>
+          <p class="project__text">
+            Лендинг с калькулятором стоимости доставки и формой заявки. Оптимизирован под мобильный трафик.
+          </p>
+          <span class="project__tag">Сервис</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Процесс работы -->
+  <section class="section" id="process">
+    <div class="container">
+      <h2 class="section__title">Как проходит работа</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">1</div>
+          <div class="step__content">
+            <h3 class="step__title">Обсуждаем задачу</h3>
+            <p class="step__text">
+              Вы рассказываете, какой сайт нужен, для кого и какие примеры вам нравятся. Определяем структуру
+              и сроки.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step__number">2</div>
+          <div class="step__content">
+            <h3 class="step__title">Разработка и вёрстка</h3>
+            <p class="step__text">
+              Я собираю сайт на HTML/CSS/JavaScript, добавляю анимации и проверяю адаптивность
+              на разных устройствах.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step__number">3</div>
+          <div class="step__content">
+            <h3 class="step__title">Правки и публикация</h3>
+            <p class="step__text">
+              Вносим правки в рамках ТЗ, после чего загружаем сайт на хостинг и подключаем домен (по договорённости).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--gray" id="faq">
+    <div class="container">
+      <h2 class="section__title">Частые вопросы</h2>
+
+      <div class="accordion" id="faq-accordion">
+        <div class="accordion__item">
+          <button class="accordion__header">
+            Сколько времени занимает разработка лендинга?
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__body">
+            Обычно от 3 до 7 дней, в зависимости от объёма и сложности. Точные сроки я называю после обсуждения задачи.
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__header">
+            Нужен ли мне готовый дизайн?
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__body">
+            Желательно иметь макет или хотя бы примеры сайтов, которые вам нравятся. Если дизайна нет, я предложу
+            простое и аккуратное оформление.
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__header">
+            Смогу ли я сам менять текст на сайте?
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__body">
+            Да. Я подскажу, в каких файлах и местах менять тексты, чтобы вы могли вносить простые правки без помощи разработчика.
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <button class="accordion__header">
+            Можете ли вы доработать уже существующий сайт?
+            <span class="accordion__icon">+</span>
+          </button>
+          <div class="accordion__body">
+            Да, я могу улучшить адаптив, добавить новые блоки, формы, анимации и исправить ошибки вёрстки.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section__title">Расскажите о своём проекте</h2>
+      <p class="section__subtitle">
+        Заполните форму — я отвечу, уточню детали и предложу варианты по структуре и стоимости.
+      </p>
+
+      <div class="contact">
+        <form class="contact__form" id="contact-form">
+          <label class="contact__field">
+            Имя
+            <input type="text" name="name" placeholder="Как к вам обращаться?" required>
+          </label>
+          <label class="contact__field">
+            Email или Telegram
+            <input type="text" name="contact" placeholder="Например: name@mail.ru или @username" required>
+          </label>
+          <label class="contact__field">
+            Кратко о проекте
+            <textarea name="message" rows="4" placeholder="Какой сайт вам нужен и для чего?" required></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary">Отправить заявку</button>
+          <p class="contact__note">
+            Форма демонстрационная. В реальном проекте можно настроить отправку на почту или в бота.
+          </p>
+        </form>
+
+        <div class="contact__info">
+          <h3>Контакты</h3>
+          <p>Город: онлайн, работаю удалённо.</p>
+          <p>Telegram: <strong>@yournickname</strong></p>
+          <p>Email: <strong>you@mail.com</strong></p>
+          <p>Удобное время для связи: с 12:00 до 20:00 по Москве.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© NovaWeb, 2025</span>
+      <a href="#hero" class="footer__link">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
